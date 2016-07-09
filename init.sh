@@ -21,4 +21,7 @@ touch ${CA_DIR_INTER}/index.txt
 echo 1000 > ${CA_DIR_INTER}/serial
 echo 1000 > ${CA_DIR_INTER}/crlnumber
 
+cp -v config.sh ${CA_DIR}
+cp -v 0*.sh ${CA_DIR}
+
 echo "==> Now go to ${CA_DIR}"

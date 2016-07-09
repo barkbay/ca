@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd $HOME/CA
+. ./config.sh
+
+cd ${CA_DIR}
 openssl genrsa -aes256 -out private/ca.key.pem 4096
 
 #Enter pass phrase for ca.key.pem: secretpassword
