@@ -1,15 +1,20 @@
 #!/bin/bash
 
+######################################
+# Generate a web service certificate #
+######################################
+. ./config.sh
+cd ${CA_DIR}
+
 if [ -z "$1" ]
 then
-	echo "First arg must be the service name (freeipa,auth,ldap...)"
+	echo "First arg must be the web service name (freeipa,auth,ldap...)"
 	exit 2
 fi
 service=$1
-cd $HOME/CA
 
 if [ -d "$service" ]; then
-	echo "$HOME/CA/$service already exists"
+	echo "${CA_DIR}/$service already exists, please remote it manually"
 	exit 3
 fi
 

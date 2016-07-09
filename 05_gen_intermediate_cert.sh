@@ -1,6 +1,7 @@
 #!/bin/bash
-
-cd $HOME/CA
+. ./config.sh
+ 
+cd ${CA_DIR}
 
 openssl ca -config openssl.cnf -extensions v3_intermediate_ca \
            -days 3650 -notext -md sha256 \

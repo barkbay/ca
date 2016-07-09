@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd $HOME/CA
+
+. ./config.sh
+cd ${CA_DIR}
 
 openssl genrsa -aes256 \
       	       -out intermediate/private/intermediate.key.pem 4096
