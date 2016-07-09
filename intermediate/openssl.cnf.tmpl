@@ -7,7 +7,7 @@ default_ca = CA_default
 
 [ CA_default ]
 # Directory and file locations.
-dir               = /home/michael/CA/intermediate
+dir               = ${CA_DIR}/intermediate
 certs             = $dir/certs
 crl_dir           = $dir/crl
 new_certs_dir     = $dir/newcerts
@@ -81,7 +81,7 @@ emailAddress                    = Email Address
 countryName_default             = FR
 stateOrProvinceName_default     = Paris
 localityName_default            =
-0.organizationName_default      = Bidou Intermediate Ltd
+0.organizationName_default      = Bidou Ltd
 organizationalUnitName_default  =
 emailAddress_default            =
 
